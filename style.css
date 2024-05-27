@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("Background.jpeg");
+    background-size: 25% 100%;
+    
+}
+
+.mainCont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.encryptCont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+
+.decryptCont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+
+input[type=submit] {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    height: 3rem;
+    width: 10rem;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    border: none;
+    background-color: #ffffff48;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    transition: 0.3s background-color ease;
+}
+
+input:hover {
+    background-color: #c5c5c548;
+    cursor: pointer;
+}
+
+textarea {
+    height: 15rem;
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 21px;
+    background-color: #ffffff48;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    transition: 0.3s background-color ease;
+}
+
+textarea:hover {
+    background-color: #c5c5c548;
+}
+
+textarea::placeholder {
+    color: #cecece;
+}

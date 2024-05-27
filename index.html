@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morse Code</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainCont">
+            <div class="encryptCont">
+                <textarea name="" id="normal-text" placeholder="Type A Text You Want To Encrypt..."></textarea>
+                <input type="submit" value="Encrypt" onclick="encrypt()">
+                <textarea name="" id="encryption" placeholder="Encryption Result..." readonly></textarea>
+            </div>
+    
+            <div class="decryptCont">
+                <textarea name="" id="code-text" placeholder="Type A Morse Code You Want To Decrypt..."></textarea>
+                <input type="submit" value="Decrypt" onclick="decrypt()">
+                <textarea name="" id="decryption" placeholder="Decryption Result..." readonly></textarea>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
